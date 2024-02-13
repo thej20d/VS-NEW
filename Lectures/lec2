@@ -1,0 +1,9 @@
+import cv2 as cv
+import numpy as np
+import matplotlib.pyplot as plt
+im = np.zeros((6,8),dtype=np.unit8)
+im[2,3]=255
+fig, ax = plt.subplots()
+ax.imshow(im,cmap= 'gray',vmin=0,vmax=255)
+ax.xaxis.tick_top()
+plt.show()
